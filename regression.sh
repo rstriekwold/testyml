@@ -1,8 +1,8 @@
 #!/bin/bash
-PROJECT_ID=[YOUR_PROJECT_ID_HERE]
-SUITE_ID=[YOUR_SUITE_ID_HERE]
+PROJECT_ID=34282
+SUITE_ID=62689
 CRT_API_URL="https://api.robotic.copado.com/pace/v4/projects/${PROJECT_ID}/jobs/${SUITE_ID}/builds"
-CRT_ACCESS_KEY=[YOUR_PERSONAL_ACCESS_KEY_HERE]
+CRT_ACCESS_KEY=LG2X91JS8rlU52UpeWIrFmMi291qiSRZZ3cn030bI5pzhrndzC2U
 # Start the build
 BUILD=$(curl -sS -H 'X-Authorization: '"${CRT_ACCESS_KEY}"'' -d '{"inputParameters": [{"key": "BROWSER", "value": "firefox"}]}' -H "Content-Type: application/json" -X POST ${CRT_API_URL})
 echo "${BUILD}"
