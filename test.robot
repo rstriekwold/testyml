@@ -13,7 +13,7 @@ Suite Teardown          Close All Browsers
 #      You may change chrome to firefox should you wish to test your application on Firefox.
 
 *** Variables ***
-${urltest}    https://www.google.com/${ENV}
+${urltest}    https://www.google.com/\${ENV}
 *** Test Cases ***
 
 # Tip: Test cases start from here. The structure of a test case is as follows:
