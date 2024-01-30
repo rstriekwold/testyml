@@ -13,7 +13,7 @@ Suite Teardown          Close All Browsers
 #      You may change chrome to firefox should you wish to test your application on Firefox.
 
 *** Variables ***
-${urltest}    https://ntrs--${ENV}.sandbox.lightning.force.com/lightning/setup/ManageUsers/page?address=%${USERID}%3Fnoredirect%3D1%26isUserEntityOverride%3D1%26retURL%3D%252Fsetup%252Fhome
+${urltest}    https://ntrs--${ENV}.sandbox.lightning.force.com/lightning/setup/ManageUsers/page?address\=%${USERID}%3Fnoredirect%3D1%26isUserEntityOverride%3D1%26retURL%3D%252Fsetup%252Fhome
 *** Test Cases ***
 
 # Tip: Test cases start from here. The structure of a test case is as follows:
