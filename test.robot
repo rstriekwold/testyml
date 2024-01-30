@@ -27,7 +27,7 @@ Test the home page
     [Tags]              regression
     GoTo                https://qentinelqi.github.io/shop/
     VerifyText          Find your spirit animal
-
+    Log to console      test
 Check the navigation menu items
     [Documentation]     Go to the shop homepage and verify the menu items.
     GoTo                https://qentinelqi.github.io/shop/
