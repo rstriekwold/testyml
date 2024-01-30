@@ -35,7 +35,6 @@ Test the home page
     ${url}=             set variable    https://ntrs--${ENV}.sandbox.lightning.force.com/lightning/setup/ManageUsers/page?address=%${USERID}%3Fnoredirect%3D1%26isUserEntityOverride%3D1%26retURL%3D%252Fsetup%252Fhome
     log to console      ${url}
     log                 ${url}
-    log to console      ${urltest}
 
 Check the navigation menu items
     [Documentation]     Go to the shop homepage and verify the menu items.
