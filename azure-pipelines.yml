@@ -1,0 +1,19 @@
+trigger:
+- main
+
+pr:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: build
+  steps:
+  - checkout: self
+
+  - script: |
+      sudo chmod +x ./regression.sh
+      ./regression.sh
+      echo "Add other actions to build, test, and deploy your project."
+    displayName: 'Run a script'
