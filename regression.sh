@@ -2,7 +2,7 @@
 PROJECT_ID=34282
 SUITE_ID=62689
 CRT_API_URL="https://api.eu-robotic.copado.com/pace/v4/projects/${PROJECT_ID}/jobs/${SUITE_ID}/builds"
-CRT_ACCESS_KEY=K6karNjK8bGzJHwo8Ed4IXtNC1UTnEKlac9twsDHpBNBZoShhtRG
+CRT_ACCESS_KEY=YOURPERSNONALACCESSKEYHERE
 # Start the build
 BUILD=$(curl -sS -H 'X-Authorization: '"${CRT_ACCESS_KEY}"'' -d '{"inputParameters": [{"key": "-i", "value": "regression"},{"key": "TESTVARIABLE", "value": "THISISCOMINGFROMTHEAPICALL"}]}' -H "Content-Type: application/json" -X POST ${CRT_API_URL})
 echo "${BUILD}"
