@@ -26,6 +26,7 @@ Suite Teardown          Close All Browsers
 Test the home page
     [Documentation]     Go to the web shop, and verify that the slogan text appears on the page.
     [Tags]              regression
+    Log                 ${TESTVARIABLE}
     GoTo                https://qentinelqi.github.io/shop/
     VerifyText          Find your spirit animal
     Log to console      test
