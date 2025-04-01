@@ -26,16 +26,8 @@ Suite Teardown          Close All Browsers
 Test the home page
     [Documentation]     Go to the web shop, and verify that the slogan text appears on the page.
     [Tags]              regression
-    Log                 ${TESTVARIABLE}
     GoTo                https://qentinelqi.github.io/shop/
     VerifyText          Find your spirit animal
-    Log to console      test
-    
-    ${ENV}=             Set Variable    jaguar
-    ${userid}=          Set variable    123434efewfwef
-    ${url}=             set variable    https://ntrs--${ENV}.sandbox.lightning.force.com/lightning/setup/ManageUsers/page?address=%${USERID}%3Fnoredirect%3D1%26isUserEntityOverride%3D1%26retURL%3D%252Fsetup%252Fhome
-    log to console      ${url}
-    log                 ${url}
 
 Check the navigation menu items
     [Documentation]     Go to the shop homepage and verify the menu items.
